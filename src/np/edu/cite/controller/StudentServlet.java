@@ -3,6 +3,7 @@ package np.edu.cite.controller;
 import np.edu.cite.entity.Student;
 import np.edu.cite.service.StudentService;
 import np.edu.cite.service.impl.StudentServiceImpl;
+import np.edu.cite.utils.Constants;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -16,17 +17,15 @@ import java.util.List;
 @WebServlet(name = "studentServlet", urlPatterns = {"/students"})
 public class StudentServlet extends HttpServlet {
 
-    private static final String VIEW_PATH = "/WEB-INF/views/";
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         StudentService studentService = new StudentServiceImpl();
-        String viewPage = VIEW_PATH + "home.jsp";
+        String viewPage = Constants.VIEW_PATH + "home.jsp";
         String action = req.getParameter("action");
         if("add".equals(action)) {
-            viewPage = VIEW_PATH + "add_student.jsp";
+            viewPage = Constants.VIEW_PATH + "add_student.jsp";
         } else if("edit".equals(action)){
-            viewPage = VIEW_PATH + "edit_student.jsp";
+            viewPage = Constants.VIEW_PATH + "edit_student.jsp";
             try {
                 Student student = studentService.getById(Integer.parseInt(req.getParameter("id")));
                 if (student == null) {

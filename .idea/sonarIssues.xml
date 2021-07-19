@@ -3,7 +3,27 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$PROJECT_DIR$/src/np/edu/cite/AuthFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/np/edu/cite/auth/AuthFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/np/edu/cite/controller/DefaultServlet.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/np/edu/cite/controller/LoginServlet.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/np/edu/cite/controller/LogoutServlet.java">
           <value>
             <set />
           </value>
@@ -48,6 +68,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/np/edu/cite/utils/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/np/edu/cite/utils/DBConnection.java">
           <value>
             <set />
@@ -74,6 +99,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/web/WEB-INF/views/home.jsp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/web/WEB-INF/views/login.jsp">
           <value>
             <set />
           </value>

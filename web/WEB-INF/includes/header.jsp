@@ -30,7 +30,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="${SITE_URL}/students">Students <span class="sr-only">(current)</span></a></li>
+                <c:if test="${sessionScope.loggedIn}">
+                    <li class="active"><a href="${SITE_URL}/students">Students <span class="sr-only">(current)</span></a></li>
+                    <li><a href="${SITE_URL}/logout">Logout</a></li>
+                </c:if>
             </ul>
 
         </div><!-- /.navbar-collapse -->

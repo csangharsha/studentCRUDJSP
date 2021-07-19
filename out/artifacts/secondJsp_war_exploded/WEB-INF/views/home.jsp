@@ -42,7 +42,7 @@
                       <a href="${SITE_URL}/students?action=edit&id=${student.id}" class="btn btn-warning btn-sm"><span class="glyphicon glyphicon-pencil"></span> </a>
                     </span>
                     <span>
-                      <a href="${SITE_URL}/students?action=delete&id=${student.id}" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span> </a>
+                      <a href="${SITE_URL}/students?action=delete&id=${student.id}" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')"><span class="glyphicon glyphicon-trash"></span> </a>
                     </span>
                   </td>
                 </tr>
